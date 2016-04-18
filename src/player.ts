@@ -22,7 +22,7 @@ class Player extends Character{
     }
     
     public reset(){
-        this.hunger = 50;
+        this.hunger = 40;
         this.health = 100;
         this.speed = 4;
         this.ammo = 0;
@@ -216,7 +216,7 @@ class Player extends Character{
     }
     
     tick(dt : number){
-        this.hunger =  Math.min(100, this.hunger + .20 * dt);
+        this.hunger =  Math.min(100, this.hunger + .16 * dt);
         if (this.hunger >= 100){
             this.health =  Math.max(0, this.health - .33 * dt);    
         }

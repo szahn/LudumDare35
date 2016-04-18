@@ -769,7 +769,7 @@
 	        this.reset();
 	    }
 	    Player.prototype.reset = function () {
-	        this.hunger = 50;
+	        this.hunger = 40;
 	        this.health = 100;
 	        this.speed = 4;
 	        this.ammo = 0;
@@ -950,7 +950,7 @@
 	        Assets.getSound(Assets.THROW).play();
 	    };
 	    Player.prototype.tick = function (dt) {
-	        this.hunger = Math.min(100, this.hunger + .20 * dt);
+	        this.hunger = Math.min(100, this.hunger + .16 * dt);
 	        if (this.hunger >= 100) {
 	            this.health = Math.max(0, this.health - .33 * dt);
 	        }
@@ -1221,7 +1221,7 @@
 	            ctx.fillStyle = "#000";
 	            ctx.fillText("Hunger " + Math.round(player.hunger), 10, this.fontSize);
 	            ctx.fillText("HP " + Math.round(player.health), this.width - 60, this.fontSize);
-	            ctx.fillText("" + State.pickupsRemaining, this.width - 60, this.fontSize * 2);
+	            ctx.fillText("" + State.pickupsRemaining, this.width - 40, 10 + (this.fontSize * 2));
 	        }
 	        else if (State.isGameOver()) {
 	            this.drawBlackOverlay();
