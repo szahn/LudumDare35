@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/game.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/game.js"></script>
+    </head>
+    <body>
+        <div id="gameContainer">
+            <canvas id="gameCanvas" width="640" height="480"></canvas>
+            <div id="splashScreen">
+                <h1>Pizza Thief</h1>
+                <p>Story: </p>
+                <p>Punch enemies to stun them. Stunned enemies may reveal an edible. Be careful not to be seen, if you do, your cover will be blown. You must consume edibles in order to satify your ever-growing hunger. Do not go too long without eating otherwise your health may decline. To win, eat all the edibles from the enemy. Eating edibles may cause you to expand, be careful not to get stuck.</p>
+                <p>Keys: Z: throw, X: punch, arrow keys move</p>
+                <button id="playBtn">Play</button>
+            </div>
+        </div>
+        <script>
+            "use strict";
+            function startGame(){
+                $("#splashScreen").remove();
+                var game = new window.Game();
+                game.start(document.getElementById("gameCanvas"));            
+            }
+
+            $(function(){
+               var btn = $("#playBtn");
+               btn.click(startGame);                 
+               btn.focus();
+            });
+        </script>
+    </body>
+</html>

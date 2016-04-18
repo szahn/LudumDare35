@@ -1,0 +1,167 @@
+[{
+    "area": [0, 0, 640,480],
+    "playerStart": [11, 3],
+    "boundaries": [
+        [2,2,6, 9], 
+        [10, 7,13,11], 
+        [15, 7,18,11], 
+        [20, 1, 23, 7],
+        [27, 3, 30, 9],
+        [1, 14, 18, 16],
+        [20, 9, 25, 13],
+        [26, 15, 28, 17],
+        [18, 18, 27, 20]],
+    "enemies": [{
+            "type":0,
+            "facing": 2,
+            "x": 11,
+            "y": 12,
+            "speed": 3,
+            "script": 0,
+            "stunDuration": 3000,
+            "scriptInterval": 120,
+            "viewDistance": 1
+        },
+        {
+            "type":0,
+            "facing": 0,
+            "x": 24,
+            "y": 4,
+            "speed": 4,
+            "script": 1,
+            "stunDuration": 2500,
+            "scriptInterval": 150,
+            "viewDistance": 2
+        },
+        {
+            "type":0,
+            "facing": 2,
+            "x": 22,
+            "y": 15,
+            "speed": 5,
+            "script": 0,
+            "stunDuration": 2000,
+            "scriptInterval": 100,
+            "viewDistance": 2
+        }]
+},{
+    "area": [0, 0, 640,480],
+    "playerStart": [10, 3],
+    "boundaries": [[7, 2, 8, 3], 
+        [12, 2, 13, 3],
+        [7, 6, 8, 7], 
+        [12, 6, 13, 7],
+        [7, 10, 14, 12],
+        [3, 4, 5, 6],
+        [16, 4, 18, 6]],
+    "enemies": [{
+            "type":0,
+            "facing": 1,
+            "x": 4,
+            "y": 7,
+            "speed": 3,
+            "script": 0,
+            "stunDuration": 1000,
+            "scriptInterval": 80,
+            "viewDistance": 1
+        },
+        {
+            "type":0,
+            "facing": 3,
+            "x": 16,
+            "y": 7,
+            "speed": 4,
+            "script": 0,
+            "stunDuration": 500,
+            "scriptInterval": 60,
+            "viewDistance": 2
+        },
+        {
+            "type":0,
+            "facing": 2,
+            "x": 10,
+            "y": 8,
+            "speed": 5,
+            "script": 0,
+            "stunDuration": 1500,
+            "scriptInterval": 150,
+            "viewDistance": 2
+        },
+        {
+            "type":0,
+            "facing": 0,
+            "x": 9,
+            "y": 1,
+            "speed": 5,
+            "script": 0,
+            "stunDuration": 750,
+            "scriptInterval": 200,
+            "viewDistance": 2
+        }]
+},{
+    "area": [0, 0, 640,480],
+    "playerStart": [24, 12],
+    "boundaries": [[18, 7, 19, 8],
+        [23, 7, 24, 8],
+        [15, 10, 25, 11], 
+        [15, 14, 25, 15], 
+        [10, 9, 11, 17],
+        [6, 9, 7, 17],
+        [28, 9, 29, 17],
+        [4, 3, 12, 7]],
+    "enemies": [{
+            "type":0,
+            "facing": 3,
+            "x": 12,
+            "y": 12,
+            "speed": 3,
+            "script": 0,
+            "stunDuration": 2000,
+            "scriptInterval": 40,
+            "viewDistance": 1
+        },
+        {
+            "type":0,
+            "facing": 2,
+            "x": 21,
+            "y": 7,
+            "speed": 4,
+            "script": 1,
+            "stunDuration": 2000,
+            "scriptInterval": 150,
+            "viewDistance": 2
+        },
+        {
+            "type":0,
+            "facing": 1,
+            "x": 8,
+            "y": 12,
+            "speed": 5,
+            "script": 0,
+            "stunDuration": 1500,
+            "scriptInterval": 100,
+            "viewDistance": 2
+        },
+        {
+            "type":0,
+            "facing": 2,
+            "x": 2,
+            "y": 4,
+            "speed": 5,
+            "script": 0,
+            "stunDuration": 1500,
+            "scriptInterval": 100,
+            "viewDistance": 2
+        },
+        {
+            "type":0,
+            "facing": 2,
+            "x": 8,
+            "y": 1,
+            "speed": 5,
+            "script": 0,
+            "stunDuration": 1500,
+            "scriptInterval": 100,
+            "viewDistance": 2
+        }]
+}]
