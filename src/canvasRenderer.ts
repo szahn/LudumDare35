@@ -134,7 +134,7 @@ class CanvasRenderer {
             ctx.fillStyle = "#000";
             ctx.fillText(`Hunger ${Math.round(player.hunger)}`, 10, this.fontSize);        
             ctx.fillText(`HP ${Math.round(player.health)}`, this.width - 60, this.fontSize);   
-            ctx.fillText(`${State.pickupsRemaining}`, this.width - 60, this.fontSize * 2);                    
+            ctx.fillText(`${State.pickupsRemaining}`, this.width - 40, 10 + (this.fontSize * 2);                    
         }
         else if(State.isGameOver()){
             this.drawBlackOverlay();
